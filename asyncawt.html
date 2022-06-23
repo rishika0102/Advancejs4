@@ -1,0 +1,25 @@
+<html>
+  <head>
+    Async wait
+  </head>
+  <body>
+  <script>
+   let c = 2;
+   let a = 1;
+   let b = 3;
+   const multiply = () => {
+    return b * c;
+   }
+
+   const add = (value) => {
+    return value + a;
+   }
+
+   async function calculate (){
+    let e = await multiply();
+    let f = add(f);
+   }
+   calculate();
+  </script>
+  </body>
+</html>
