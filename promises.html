@@ -8,19 +8,19 @@
         const x = "promises";
         const y = "promises"
         if(x === y) {
-          resolve();
+          resolve('Success');
         } else {
-          reject();
+          reject('Some error has occurred');
         }
       });
 
       promise.
-          then(function () {
-              console.log('Success');
-          }).
-          catch(function () {
-              console.log('Some error has occurred');
-          });
+        then((res) => {
+          console.log(res);
+        }).
+        catch((error) => {
+          console.log(error);
+        });
     </script>
   </body>
 </html>
