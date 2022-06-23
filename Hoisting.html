@@ -1,0 +1,23 @@
+<html>
+  <head>
+    Hoisting of Adavanced Java Script
+  </head>
+  <body>
+    <script>
+      hoist();
+      hoisted();
+      function hoist() {
+        x = 5;
+        y = 7;
+        console.log("value of x", x);
+        console.log("value of y", y);
+      }
+      var x;
+      let x;
+      function hoisted() {
+      console.log("value of x", x);
+      console.log("value of y", y);
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    closures
+  </head>
+  <body>
+    <button onclick="count()">Click me</button>
+    <p id="demo"></p>
+    <script>
+      function outerFun() {
+        var a = 2;
+        var b = 1;
+        innerFun () => {
+          return a * b;
+        }
+       return innerFun;
+      }
+      console.log("")
+      function count() {
+        document.getElementById("demo").innerHTML = outerFun()();
+      }
+
+
+    </script>
+  </body>
+</html>

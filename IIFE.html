@@ -1,0 +1,17 @@
+<html>
+  <head>
+   IIFE of java script
+  </head>
+  <body>
+    <script>
+      regular();
+      function regular(){
+        console.log("This regular function");
+        console.log("Calling IIFE function inside the regular function");
+      (function IIFE(){
+        console.log("This is IIFE function");
+      }) ();
+    }
+    </script>
+  </body>
+</html>
