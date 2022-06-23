@@ -1,0 +1,32 @@
+<html>
+  <head>
+    Async Await of Advanced java script
+  </head>
+  <body>
+    <script>
+      const prom = () => {
+        return new Promise((resolve) => {
+          resolve ("this is resolve");
+        })
+      }
+     const fun = () => {
+      return "this is normal function"
+     }
+     const fun1 = async () => {
+      return "this is normal function one"
+     }
+     const callMe = async () => {
+      let value = prom();
+      console.log(value);
+
+      let value1 = await fun();
+      console.log(value1);
+
+      let value2 = fun1();
+      console.log(value2);
+     }
+     callMe();
+     fun1();
+    </script>
+  </body>
+</html>
