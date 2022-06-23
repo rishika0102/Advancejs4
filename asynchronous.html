@@ -1,0 +1,20 @@
+<html>
+  <head>
+    callback advanced java-script </br>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function displayer(value) {
+        document.getElementById("demo").innerHTML = value;
+      }
+
+      function multiply(m1, m2, callbck) {
+        let multi = m1 * m2;
+        callbck(multi);
+      }
+
+      multiply(1, 1, displayer);
+    </script>
+  </body>
+</html>
