@@ -1,0 +1,17 @@
+<html>
+ <body>
+  <p>With interpolation</p>
+  <p id="demo"></p>
+  <p>Without interpolation</p>
+  <p id="demo1"></p>
+  <script>
+    let str1 = "Advanced";
+    let str2 = "java-script";
+    let str3 = `World of Advanced Java-Script`;
+    let str = `World of ${str1} ${str2}!`;
+
+    document.getElementById("demo").innerHTML = str;
+    document.getElementById("demo1").innerHTML = str3;
+  </script>
+ </body>
+</html>

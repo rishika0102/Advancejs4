@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <button onclick="scope()">Click Me</button>
+    <script>
+     let x = 7 ; // global declaration
+     {
+      let y = 5; // block declaration
+      console.log("block variable", y);
+      console.log("Global variable", x);
+    }
+     function scope(){
+       let z = 1; // function declaration
+       console.log("function variable", z);
+       console.log("Global variable", x);
+       console.log("block variable", y);
+     }
+
+    </script>
+  </body>
+</html>

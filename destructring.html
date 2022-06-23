@@ -1,0 +1,35 @@
+<html>
+  <body>
+  <p>destructring of Array</p>
+  <button onclick="basicDs()">Click me for basic destructring</button>
+  <p id="demo"></p>
+  <button onclick="dsBeforeVariable()">Click me for destructring before variable</button>
+   <p id="demo1"></p>
+  <button onclick="skipValue()">Click me for skip value destructring</button>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+   <script>
+  function basicDs(){
+    let introduction = ["Hello", "this" , "is", "Java-script"];
+    let greeting = introduction[0];
+    let name = introduction[3];
+    document.getElementById("demo").innerHTML = greeting + " " + name;
+  }
+  function dsBeforeVariable(){
+    let greeting, pronoun;
+    [greeting, pronoun] = ["Hello", "she" , "designs", "js-code"];
+    document.getElementById("demo1").innerHTML = greeting + " " + pronoun;
+   }
+  function skipValue(){
+   let [,pronoun,,name] = ["Hello", "she" , "designs", "js-code"];
+    document.getElementById("demo2").innerHTML = pronoun + " " + name;
+  }
+  function getArray() {
+    return ["Hello", "she" , "designs", "code"];
+  }
+    let [greeting,pronoun,verb,name] = getArray();
+    document.getElementById("demo3").innerHTML = pronoun + " " + verb+" "+name;
+   </script>
+
+  </body>
+</html>

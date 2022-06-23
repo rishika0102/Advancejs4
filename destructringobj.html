@@ -1,0 +1,34 @@
+<html>
+  <body>
+     <button onclick="basicObj()">Click me for basic destructring</button>
+     <p id="demo"></p>
+     <button onclick="nVariable()">Click me for new property destructring</button>
+     <p id="demo1"></p>
+     <button onclick="addObj()">Click me for add new property destructring</button>
+     <p id="demo2"></p>
+     <button onclick="arrObj()">Click me for array with object</button>
+     <p id="demo3"></p>
+    <script>
+      function basicObj() {
+        let person = {name: "Siya", country: "India", job: "Developer"};
+        let {name, country, job} = person;
+        document.getElementById("demo").innerHTML = name + " " + country;
+      }
+      function nVariable() {
+        let person = {name: "Siya", country: "India", job: "Developer"};
+        let {name: name1, job: job1} = person;
+        document.getElementById("demo1").innerHTML = name1 + " " + job1+ " " +person.name1;
+      }
+      function addObj() {
+        let person = {name: "Siya", country: "India", job: "Developer"};
+        let {name = "Priya", age = 13} = person;
+        document.getElementById("demo2").innerHTML = name + " " + age;
+      }
+      function arrObj() {
+        let person = {name: "Sarah", country: "Nigeria", friends: ["Annie", "Becky"]};
+        let {name: name1, friends: friends1} = person;
+        document.getElementById("demo3").innerHTML = name1 + " " + friends1;
+      }
+    </script>
+  </body>
+</html>
