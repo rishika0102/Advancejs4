@@ -1,0 +1,19 @@
+<html>
+  <head>
+    date object localisation
+  </head>
+  <body>
+    <script>
+      const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+      console.log(event.toLocaleDateString('de-DE', options));
+
+      console.log(event.toLocaleDateString('ar-EG', options));
+
+      console.log(event.toLocaleDateString(undefined, options));
+      console.log(date.toLocaleDateString('fa-IR', options));
+      console.log(date.toLocaleDateString('ja-JP-u-ca-japanese', options));
+    </script>
+  </body>
+</html>
