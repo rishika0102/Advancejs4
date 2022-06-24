@@ -1,0 +1,27 @@
+<html>
+  <head>
+    Arrow Function
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p>if we have only one parameter so we can write arrow function without parentheses</p>
+    <p id="demo1"></p>
+    <script>
+      let multiply = (a, b) => a * b;
+      document.getElementById("demo").innerHTML = multiply(6, 1);
+      let arrowFun = c => "hello" + c;
+      document.getElementById("demo1").innerHTML = arrowFun("Universe!");
+      var obj = {
+        num: 10,
+        displayNum: () => {console.log(this.num)}
+      }
+      gfg();
+      console.log(input1);
+      input1 = 8;
+      var gfg = () => {
+        console.log("Hoisting in javascript")
+      }
+      obj.displayNum()
+    </script>
+  </body>
+</html>
