@@ -1,0 +1,29 @@
+<html>
+  <head>
+    Module Pattern Of Advanced Java Script
+  </head>
+  <body>
+    <script>
+      var studentDetails = () => {
+        var name = "Jhon";
+        var age = 20;
+        var stream = "Animation"
+
+        return {
+          name: name,
+          age: age,
+          stream: stream
+        }
+      }
+
+      var newStudent = studentDetails()
+
+      var userName = newStudent.name;
+      console.log(userName);
+      var userAge = newStudent.age;
+      console.log(userAge);
+      var userDesignation = newStudent.stream;
+      console.log(userDesignation);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    Data hiding with Module pattern
+  </head>
+  <body>
+    <script>
+
+    function studentDetails() {
+      var name: "Jhon";
+      var age = 20;
+      var stream = "Animation",
+      var fees = 10000;
+
+      var extraCurricular = function(amount) {
+        fees = fees + amount;
+      }
+
+      return {
+        name: name,
+        age: age,
+        stream: stream,
+        extraCurricular: extraCurricular
+      }
+    }
+
+    var newStudent = studentDetails()
+
+    var userName = newStudent.calculateBonus(1000);
+    </script>
+  </body>
+</html>
