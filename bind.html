@@ -1,0 +1,26 @@
+<html>
+  <head>
+    bind method
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const student = {
+        firstName:"John",
+        lastName: "Doe",
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      }
+
+      const studentDetails = {
+      firstName: "Zohn",
+      lastName: "Dev",
+      }
+
+      let fullName = student.fullName.bind(studentDetails);
+
+      document.getElementById("demo").innerHTML = fullName();
+    </script>
+  </body>
+</html>
